@@ -63,7 +63,6 @@ main {
 main > h1 {
   display: block;
   font-size: 4rem;
-  /* font-weight: 500; */
   margin: 0;
   top: 0;
   opacity: 0.3;
@@ -72,13 +71,11 @@ main > h1 {
 
 main > h2 {
   display: block;
-  /* position: absolute; */
   font-size: 7rem;
   margin: 0;
   top: 0;
   opacity: 0.3;
   z-index: -1;
-  margin-left: 0.5em;
 }
 
 section {
