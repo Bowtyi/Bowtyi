@@ -55,26 +55,26 @@ body {
 }
 
 main {
-  width: 75%;
+  width: 60%;
   margin: auto;
   height: 100vh;
 }
 
 main > h1 {
   display: block;
-  font-size: 4rem;
+  font-size: 3.125rem;
   margin: 0;
   top: 0;
-  opacity: 0.3;
+  opacity: 0.2;
   z-index: -1;
 }
 
 main > h2 {
   display: block;
-  font-size: 7rem;
+  font-size: 5.625rem;
   margin: 0;
   top: 0;
-  opacity: 0.3;
+  opacity: 0.2;
   z-index: -1;
 }
 
@@ -93,4 +93,8 @@ section > div {
 img {
   height: 12rem;
   width: 12rem;
+}
+
+a {
+  text-transform: rotate(90deg);
 }
