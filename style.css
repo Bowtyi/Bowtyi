@@ -95,6 +95,13 @@ img {
   width: 12rem;
 }
 
-a {
-  text-transform: rotate(90deg);
+main > a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  /* transform: rotate(-90deg); */
+}
+
+main > a > h2 {
+  opacity: 0.2;
 }
