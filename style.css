@@ -81,11 +81,10 @@ main > h2 {
 section {
   display: flex;
   font-weight: 300;
-  height: 100vh;
   width: 100vw;
 }
 
-section > div {
+section > article {
   display: flex;
   flex-direction: column;
 }
@@ -99,9 +98,13 @@ main > a {
   position: relative;
   text-decoration: none;
   color: black;
-  /* transform: rotate(-90deg); */
 }
 
 main > a > h2 {
   opacity: 0.2;
+}
+
+main > a:hover > h2,
+main > a:focus > h2 {
+  opacity: 0.4;
 }
