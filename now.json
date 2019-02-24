@@ -2,7 +2,7 @@
   "alias": ["pineapple-world.pw"],
   "builds": [
     { "src": "index.html", "use": "@now/static" },
-    { "src": "styel.css", "use": "@now/static" },
+    { "src": "style.css", "use": "@now/static" },
     { "src": "/assets/Logo@x2.png", "use": "@now/static" }
   ]
 }
