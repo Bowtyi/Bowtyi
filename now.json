@@ -11,5 +11,5 @@
     ]
   },
   "alias": "Pineapple-world",
-  "files": ["dist"]
+  "files": ["/"]
 }
