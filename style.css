@@ -13,6 +13,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  margin: 0;
   background: linear-gradient(270deg, #43c6ac, #f8ffae);
   background-size: 400% 400%;
   -webkit-animation: backgroundAnimation 30s ease infinite;
@@ -20,28 +21,6 @@ body {
   animation: backgroundAnimation 30s ease infinite;
 }
 
-@-webkit-keyframes backgroundAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@-moz-keyframes backgroundAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 @keyframes backgroundAnimation {
   0% {
     background-position: 0% 50%;
@@ -95,7 +74,6 @@ img {
 }
 
 main > a {
-  position: relative;
   text-decoration: none;
   color: black;
 }
@@ -109,15 +87,53 @@ main > a:focus > h2 {
   opacity: 0.4;
 }
 
-main > a > h2 > span {
-  margin-left: 0.5em;
-  -webkit-transition: margin-left 0.4s ease-in-out infinite;
-  -moz-transition: margin-left 0.4s ease-in-out infinite;
-  -o-transition: margin-left 0.4s ease-in-out infinite;
-  transition: margin-left 0.4s ease-in-out infinite;
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  margin-top: 6em;
 }
 
-main > a:hover > h2 > span {
-  margin-left: 1em;
-  transition: margin-left 0.8s ease-in-out infinite;
+section > p {
+  text-align: center;
+  font-family: "Work sans";
+  font-weight: 300;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+footer > article {
+  margin: 1em 4em;
+}
+footer > article > ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+footer > article:nth-child(2) > ul {
+  text-align: right;
+}
+
+footer > article > ul > li {
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+footer > article > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+footer > article > ul > li > a:visited,
+footer > article > ul > li > a:active {
+  color: white;
 }
