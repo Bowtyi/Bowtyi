@@ -1,86 +1,139 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-	font-family: 'Work sans', 'Lucida Sans', 'Lucida Sans Regular',
-		'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	height: 100%;
+  font-family: "Work sans", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  height: 100%;
 }
 
 body {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	/* padding: 0 30%; */
-	-webkit-animation: AnimationName 30s ease infinite;
-	-moz-animation: AnimationName 30s ease infinite;
-	animation: AnimationName 30s ease infinite;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background: linear-gradient(270deg, #43c6ac, #f8ffae);
+  background-size: 400% 400%;
+  -webkit-animation: backgroundAnimation 30s ease infinite;
+  -moz-animation: backgroundAnimation 30s ease infinite;
+  animation: backgroundAnimation 30s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 main {
-	width: 48rem;
-	margin: auto;
+  width: 60%;
+  margin: auto;
+  height: 100vh;
 }
 
-h1 {
-	display: block;
-	position: absolute;
-	font-size: 16rem;
-	margin: 0;
-	top: 0;
-	opacity: 0.1;
-	z-index: -1;
+main > h1 {
+  display: block;
+  font-size: 3.125rem;
+  margin: 0;
+  top: 0;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+main > h2 {
+  display: block;
+  font-size: 5.625rem;
+  margin: 0;
+  top: 0;
+  opacity: 0.2;
+  z-index: -1;
 }
 
 section {
-	display: flex;
-	font-weight: 300;
+  display: flex;
+  font-weight: 300;
+  width: 100vw;
 }
 
-section > div {
-	display: flex;
-	flex-direction: column;
+section > article {
+  display: flex;
+  flex-direction: column;
 }
 
 img {
-	height: 12rem;
-	width: 12rem;
+  height: 12rem;
+  width: 12rem;
 }
 
-@-webkit-keyframes AnimationName {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+main > a {
+  text-decoration: none;
+  color: black;
 }
-@-moz-keyframes AnimationName {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+
+main > a > h2 {
+  opacity: 0.2;
 }
-@keyframes AnimationName {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+
+main > a:hover > h2,
+main > a:focus > h2 {
+  opacity: 0.4;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  margin-top: 6em;
+}
+
+section > p {
+  text-align: center;
+  font-family: "Work sans";
+  font-weight: 300;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+footer > article {
+  margin: 1em 4em;
+}
+footer > article > ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+footer > article:nth-child(2) > ul {
+  text-align: right;
+}
+
+footer > article > ul > li {
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+footer > article > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+footer > article > ul > li > a:visited,
+footer > article > ul > li > a:active {
+  color: white;
 }
