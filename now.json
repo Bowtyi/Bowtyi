@@ -1,6 +1,4 @@
 {
   "alias": ["pineapple-world.pw"],
-  "github": {
-    "autoAlias": false
-  }
+  "builds": [{ "src": "index.html", "use": "@now/static" }]
 }
