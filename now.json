@@ -2,6 +2,5 @@
   "alias": ["pineapple-world.pw"],
   "github": {
     "autoAlias": false
-  },
-  "static": ["index.html"]
+  }
 }
