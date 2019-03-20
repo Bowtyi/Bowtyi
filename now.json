@@ -1,8 +1,16 @@
 {
-  "alias": ["pineapple-world.pw", "www.pineapple-world.pw"],
-  "builds": [
-    { "src": "index.html", "use": "@now/static" },
-    { "src": "style.css", "use": "@now/static" },
-    { "src": "/assets/Logo@x2.png", "use": "@now/static" }
-  ]
+	"version": 2,
+ 	"alias": ["pineapple-world.pw", "www.pineapple-world.pw"],
+ 	"builds": [
+ 		{ "src": "index.html", "use": "@now/static" },
+		{ "src": "style.css", "use": "@now/static" },
+		{ "src": "/assets/Logo@x2.png", "use": "@now/static" }
+  	],
+  	"routes": [
+  		{
+    		"src": "/(.*)",
+    		"status": 301,
+    		"headers": { "location": "https://pineapple-world.pw/$1" }
+    	}
+	]
 }
