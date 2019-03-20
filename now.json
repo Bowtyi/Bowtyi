@@ -10,7 +10,9 @@
   		{
     		"src": "/(.*)",
     		"status": 301,
-    		"headers": { "location": "https://pineapple-world.pw/$1" }
+    		"headers": {
+    			"Location": "https://pineapple-world.pw/$1"
+    		}
     	}
 	]
 }
