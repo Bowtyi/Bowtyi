@@ -1,6 +1,6 @@
 {
 	"version": 2,
- 	"alias": ["pineapple-world.pw", "www.pineapple-world.pw"],
+ 	"alias": ["www.pineapple-world.pw"],
  	"builds": [
  		{ "src": "index.html", "use": "@now/static" },
 		{ "src": "style.css", "use": "@now/static" },
