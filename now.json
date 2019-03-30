@@ -8,7 +8,7 @@
 			"use": "@now/static"
 		},
 		{
-			"src": "styel.css",
+			"src": "style.css",
 			"use": "@now/static"
 		},
 		{
