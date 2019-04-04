@@ -108,6 +108,10 @@ footer {
   align-items: center;
   background-color: black;
   color: white;
+  position: fixed;
+  bottom:0;
+  right: 0;
+  left:0;
 }
 
 footer > article {
