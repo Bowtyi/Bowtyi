@@ -36,6 +36,7 @@ html {
   margin-top: -60px;
   padding-left: 10px;
 }
+
 #title span {
   background: -webkit-linear-gradient(gray, yellow);
   -webkit-background-clip: text;
