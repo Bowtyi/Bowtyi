@@ -37,10 +37,8 @@ html {
   padding-left: 10px;
 }
 
-#title span {
-  background: -webkit-linear-gradient(gray, yellow);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+#title span img {
+  width: 3em;
 }
 
 @keyframes animStar {
