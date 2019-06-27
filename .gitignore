@@ -92,3 +92,6 @@ typings/
 
 # next.js build output
 .next
+
+# vim swp files
+*.swp
