@@ -1,0 +1,43 @@
+on:
+  push:
+    branches:
+      - setup/automated-deployment
+
+jobs: 
+  FTP-Deploy-Action:
+    name: FTP Deploy Action
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    # This action checks-out your repository under $GITHUB_WORKSPACE, so your workflow can access it.
+    # https://github.com/actions/checkout
+    steps:
+      - uses: actions/checkout@v2.1.0
+        with:
+          fetch-depth: 2
+
+      # - name: Use Node.js ${{ matrix.node-version }}
+      #   uses: actions/setup-node@v1
+      #   with:
+      #     node-version: ${{ matrix.node-version }}
+
+      # - name: Build Project
+      #   run: |
+      #     npm install
+      #     npm run build --if-present
+
+      - name: List output files
+        run: ls
+
+      - name: FTP Deploy to Host
+        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        with:
+          ftp-server: ${{ secrets.FTP_SERVER }}
+          ftp-username: ${{ secrets.FTP_USERNAME }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          # local-dir: ./ # Change to ./build in case we wi late ron
+          # git-ftp-args: --dry-run
